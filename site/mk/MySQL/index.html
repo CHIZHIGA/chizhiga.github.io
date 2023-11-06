@@ -977,137 +977,137 @@
 <h2 id="ddl">DDL</h2>
 <p><font color="red">数据定义语言，用来定义数据库对象（数据库，表，字段）</font></p>
 <h3 id="_1">数据库操作</h3>
-<p>show databases; 查询所有数据库
-select database(); 查询当前数据库
-create databases [if not exists] 数据库名 [default charset 字符集] [collate 排序规则]; 创建
+<p>show databases; 查询所有数据库<br />
+select database(); 查询当前数据库<br />
+create databases [if not exists] 数据库名 [default charset 字符集] [collate 排序规则]; 创建<br />
 drop database [if exists] 数据库名; 删除
 use 数据库名; 使用</p>
 <h3 id="_2">表操作</h3>
-<p>show tables; 查询当前数据库所有表
-desc 表名; 查询表结构
-show create table 表名; 查询指定表的建表语句
-alter table 表名 add 字段名 类型(长度) [comment 注释] [约束]; 添加字段
-alter table 表名 modify 字段名 新数据类型(长度); 修改数据类型
-alter table 表名 change 旧字段名 新字段名 类型(长度) [comment 注释] [约束]; 修改字段名和字段类型
-alter table 表名 drop 字段名; 删除字段
-alter table 表名 rename to 新表名; 修改表名
-drop table [if exits] 表名; 删除表
-truncate table 表名; 删除指定表，并重新创建该表</p>
+<p>show tables; 查询当前数据库所有表<br />
+desc 表名; 查询表结构<br />
+show create table 表名; 查询指定表的建表语句<br />
+alter table 表名 add 字段名 类型(长度) [comment 注释] [约束]; 添加字段<br />
+alter table 表名 modify 字段名 新数据类型(长度); 修改数据类型<br />
+alter table 表名 change 旧字段名 新字段名 类型(长度) [comment 注释] [约束]; 修改字段名和字段类型<br />
+alter table 表名 drop 字段名; 删除字段<br />
+alter table 表名 rename to 新表名; 修改表名<br />
+drop table [if exits] 表名; 删除表<br />
+truncate table 表名; 删除指定表，并重新创建该表  </p>
 <h2 id="dml">DML</h2>
-<p><font color="red">数据操作语言，用来对数据库表中的数据进行增删改</font>
-insert into 表名 (字段名1,字段名2,...) values(值1,值2,...); 给指定字段添加数据
-insert into 表名 values(值1,值2,...); 给全部字段添加数据
-insert into 表名 (字段名1,字段名2,...) values(值1,值2,...),(值1,值2,...)(值1,值2,...); 批量添加数据
-insert into 表名 values(值1,值2,...),(值1,值2,...)(值1,值2,...); 批量添加数据
-update 表名 set 字段名1=值1,字段名2=值2,...[where 条件]; 修改数据
+<p><font color="red">数据操作语言，用来对数据库表中的数据进行增删改</font><br />
+insert into 表名 (字段名1,字段名2,...) values(值1,值2,...); 给指定字段添加数据<br />
+insert into 表名 values(值1,值2,...); 给全部字段添加数据<br />
+insert into 表名 (字段名1,字段名2,...) values(值1,值2,...),(值1,值2,...)(值1,值2,...); 批量添加数据<br />
+insert into 表名 values(值1,值2,...),(值1,值2,...)(值1,值2,...); 批量添加数据<br />
+update 表名 set 字段名1=值1,字段名2=值2,...[where 条件]; 修改数据<br />
 delete from 表名 [where 条件]; 删除数据</p>
 <h2 id="dql">DQL</h2>
-<p><font color="red">数据查询语言，用来查询数据库中表的记录</font>
+<p><font color="red">数据查询语言，用来查询数据库中表的记录</font><br />
 select 字段列表 from 表名 where 条件列表 group by 分组字段列表 having 分组后条件列表 order by 排序字段列表 limit 分页参数</p>
 <h2 id="dcl">DCL</h2>
 <p><font color="red">数据控制语言，用来创建数据库用户、控制数据库的访问权限</font></p>
 <h3 id="_3">管理用户</h3>
-<p>create user '用户名@主机名' identified by '密码'; 创建用户
-alter user '用户名@主机名' identified with mysql_native_password by '新密码'; 修改用户密码
+<p>create user '用户名@主机名' identified by '密码'; 创建用户<br />
+alter user '用户名@主机名' identified with mysql_native_password by '新密码'; 修改用户密码<br />
 drop user '用户名@主机名'; 删除用户</p>
 <h3 id="_4">权限控制</h3>
-<p>show grants for '用户名@主机名'; 查询权限
-grant 权限列表 on 数据库名.表名 to '用户名@主机名'; 授予权限
-revoke 权限列表 on 数据库名.表名 from '用户名@主机名'; 撤销权限</p>
+<p>show grants for '用户名@主机名'; 查询权限 <br />
+grant 权限列表 on 数据库名.表名 to '用户名@主机名'; 授予权限  <br />
+revoke 权限列表 on 数据库名.表名 from '用户名@主机名'; 撤销权限 </p>
 <h2 id="_5">函数</h2>
 <h3 id="_6">字符串函数</h3>
-<p><code>concat(s1,s2,...sn)</code> 字符串拼接
-<code>lower(str)</code> 字符串小写
-<code>upper(str)</code> 字符串大写
-<code>lpad(str,n,pad)</code> 左填充
-<code>rpad(str,n,pad)</code>右填充
-<code>trim(str)</code> 去头尾空格
-<code>sustring(str,start,len)</code> 字符串截取</p>
+<p><code>concat(s1,s2,...sn)</code> 字符串拼接  <br />
+<code>lower(str)</code> 字符串小写   <br />
+<code>upper(str)</code> 字符串大写   <br />
+<code>lpad(str,n,pad)</code> 左填充  <br />
+<code>rpad(str,n,pad)</code>右填充   <br />
+<code>trim(str)</code> 去头尾空格<br />
+<code>sustring(str,start,len)</code> 字符串截取    </p>
 <h3 id="_7">数值函数</h3>
-<p><code>ceil(x)</code> 向上取整
-<code>floor(x)</code> 向下取整 
-<code>mod(x,y)</code> 返回x/y的模
-<code>rand()</code> 返回0~1内的随机数
-<code>round(x,y)</code> 求参数x的四舍五入的值，保留y位小数
+<p><code>ceil(x)</code> 向上取整<br />
+<code>floor(x)</code> 向下取整   <br />
+<code>mod(x,y)</code> 返回x/y的模<br />
+<code>rand()</code> 返回0~1内的随机数<br />
+<code>round(x,y)</code> 求参数x的四舍五入的值，保留y位小数   <br />
 <code>select lpad(round(rand()*1000000,0),6,0);</code>  ||  <code>select substring(rand(),3,6);</code> 生成六位的随机数  </p>
 <h3 id="_8">日期函数</h3>
-<p><code>curdate()</code> 返回当前日期
-<code>curtime()</code> 返回当前时间
-<code>now()</code> 返回当前日期和时间
-<code>year(date)</code> 获取指定date的年份
-<code>month(date)</code> 获取指定date的月份
-<code>day(date)</code> 获取指定date的日期
-<code>date_add(date,interval expr type)</code> 返回一个日期或时间值加上一个时间间隔expr的时间值
-<code>datediff(date1,date2)</code> 返回日期差（天数）</p>
+<p><code>curdate()</code> 返回当前日期  <br />
+<code>curtime()</code> 返回当前时间  <br />
+<code>now()</code> 返回当前日期和时间<br />
+<code>year(date)</code> 获取指定date的年份   <br />
+<code>month(date)</code> 获取指定date的月份  <br />
+<code>day(date)</code> 获取指定date的日期<br />
+<code>date_add(date,interval expr type)</code> 返回一个日期或时间值加上一个时间间隔expr的时间值  <br />
+<code>datediff(date1,date2)</code> 返回日期差（天数）  </p>
 <h3 id="_9">流程函数</h3>
-<p><code>if(value,t,f)</code> 如果值为真，返回t，否则返回f
-<code>ifnull(value1,value2)</code> 如果值1不为空，返回值1，否则返回值2
-<code>case when [val1] then [res1] ... else [defalut] end</code> 如果值1为真，返回结果1，否则返回默认值
-<code>case [expr] when [val1] then [res1] ...else [defalut] end</code> 如果expr等于val1，返回结果1，否则返回默认值</p>
+<p><code>if(value,t,f)</code> 如果值为真，返回t，否则返回f  <br />
+<code>ifnull(value1,value2)</code> 如果值1不为空，返回值1，否则返回值2   <br />
+<code>case when [val1] then [res1] ... else [defalut] end</code> 如果值1为真，返回结果1，否则返回默认值  <br />
+<code>case [expr] when [val1] then [res1] ...else [defalut] end</code> 如果expr等于val1，返回结果1，否则返回默认值     </p>
 <h2 id="_10">约束</h2>
-<p>not null 非空约束
-unique 唯一约束
-primary key 主键约束
-default 默认约束
-check 检查约束（8.0.16版本）
-foreign key 外键约束</p>
+<p>not null 非空约束 <br />
+unique 唯一约束   <br />
+primary key 主键约束      <br />
+default 默认约束      <br />
+check 检查约束（8.0.16版本）      <br />
+foreign key 外键约束        </p>
 <h3 id="_11">外键</h3>
-<p>alter table 表名 add constraint 外键名称 foreign key(外键字段名) reference 主表(主表列名); 添加外键
+<p>alter table 表名 add constraint 外键名称 foreign key(外键字段名) reference 主表(主表列名); 添加外键   <br />
 alter table 表名 drop foreign key 外键名称; 删除外键</p>
 <h3 id="_12">外键行为</h3>
-<p>cascade 级联
+<p>cascade 级联      <br />
 set null 设为空</p>
 <h2 id="_13">多表查询</h2>
 <h3 id="_14">多表关系</h3>
-<p>1.一对多：在多的一方设置外键，关联的一方的主键
-2.多对多：建议中间表，中间表包含两个外键，关联两张表的主键
+<p>1.一对多：在多的一方设置外键，关联的一方的主键    <br />
+2.多对多：建议中间表，中间表包含两个外键，关联两张表的主键    <br />
 3.一对一：用于表结构拆分，在其中一方设置外键（UNIQUE），关联另一方的主键</p>
 <h2 id="_15">内连接</h2>
-<p>select 字段列表 from 表1,表2 where 条件...; 隐式内连接
+<p>select 字段列表 from 表1,表2 where 条件...; 隐式内连接    <br />
 select 字段列表 from 表1 [inner] join 表2 on 条件...; 显示内连接</p>
 <h2 id="_16">外连接</h2>
-<p>select 字段列表 from 表1 left [outer] join 表2 on 条件...; 左外连接（查询表1的所有数据 包含 表1和表2交集部分的数据）
+<p>select 字段列表 from 表1 left [outer] join 表2 on 条件...; 左外连接（查询表1的所有数据 包含 表1和表2交集部分的数据）      <br />
 select 字段列表 from 表1 right [outer] join 表2 on 条件...;  右外连接（查询表2的所有数据 包含 表1和表2交集部分的数据）</p>
 <h2 id="_17">自连接</h2>
 <p>select 字段列表 form 表1 别名1 join 表1 别名2 on 条件...; </p>
 <h2 id="_18">联合查询</h2>
 <p>select 字段列表 from 表1 union [all] select 字段列表 from 表2; (列数和字段类型保持一致，union all将全部数据合并，union会去重)</p>
 <h2 id="_19">子查询</h2>
-<p><font color="red">标量子查询 列子查询 行子查询 表子查询</font>
-1.标量子查询：子查询返回的结果是单个值（数字、字符串、日期等）
-2.列子查询：子查询返回的结果是一列（可以是多行）
-3.行子查询：子查询返回的结果是一行（可以是多列）
-4.表子查询：子查询返回的结果是多行多列
+<p><font color="red">标量子查询 列子查询 行子查询 表子查询</font><br />
+1.标量子查询：子查询返回的结果是单个值（数字、字符串、日期等）    <br />
+2.列子查询：子查询返回的结果是一列（可以是多行）      <br />
+3.行子查询：子查询返回的结果是一行（可以是多列）      <br />
+4.表子查询：子查询返回的结果是多行多列    <br />
 select * from t1 where column = (select column1 from t2);</p>
 <h2 id="_20">事务</h2>
 <p><font color="red">是一组操作的集合，它是一个不可分割的工作单位，事务会把所有的操作作为一个整体一起向系统提交或撤销操作请求，即这些操作要么同时成功，要么同时失败</font></p>
 <h3 id="1">事务操作1</h3>
-<p><code>select @@autocommit;</code> 查看事务提交方式
-<code>set @@autocommit = 0;</code> 设置事务提交方式
-<code>commit;</code> 提交事务
+<p><code>select @@autocommit;</code> 查看事务提交方式   <br />
+<code>set @@autocommit = 0;</code> 设置事务提交方式      <br />
+<code>commit;</code> 提交事务    <br />
 <code>rollback;</code> 回滚事务</p>
 <h3 id="2">事务操作2</h3>
-<p>start transaction 或 begin; 开启事务
-commit; 提交事务
+<p>start transaction 或 begin; 开启事务      <br />
+commit; 提交事务      <br />
 rollback; 回滚事务</p>
 <h3 id="acid">事务四大特性（ACID）</h3>
-<p>原子性（Atomicity）事务是不可分割的最小操作单元，要么全部成功，要么全部失败 
-一致性（Consistency）事务完成时，必须使所有的数据都保持一致状态
-隔离性（Isolation）数据库系统提供的隔离机制，保证事务在不受外部并发操作影响的独立环境下运行
+<p>原子性（Atomicity）事务是不可分割的最小操作单元，要么全部成功，要么全部失败   <br />
+一致性（Consistency）事务完成时，必须使所有的数据都保持一致状态 
+隔离性（Isolation）数据库系统提供的隔离机制，保证事务在不受外部并发操作影响的独立环境下运行   <br />
 持久性（Durability）事务一旦提交或回滚，它对数据库中的数据的改变就是永久的</p>
 <h3 id="_21">并发事务问题</h3>
 <ul>
-<li>脏读 一个事务读到另外一个事务还没有提交的的数据
-不可重复读 一个事务先后读取同一条记录，但两次读取的数据不同，称之为不可重复读</li>
+<li>脏读 一个事务读到另外一个事务还没有提交的的数据</li>
+<li>不可重复读 一个事务先后读取同一条记录，但两次读取的数据不同，称之为不可重复读</li>
 <li>幻读 一个事务按照条件查询数据时，没有对应的数据行，但是在插入数据时，又发现这行数据已经存在，好像出现了“幻影”</li>
 </ul>
 <h3 id="_22">事务隔离级别</h3>
-<p><font color="red">事务隔离级别越高，数据越安全，但是性能越低</font>
-Read Uncommitted（读未提交）
-Read Uncommitted（读已提交）
-Repeatable Read（可重复读取）
-Serializable（可串行化）
-select @@transaction_isolation; 查看事务隔离级别
+<p><font color="red">事务隔离级别越高，数据越安全，但是性能越低</font>   <br />
+Read Uncommitted（读未提交）      <br />
+Read Uncommitted（读已提交）      <br />
+Repeatable Read（可重复读取）     <br />
+Serializable（可串行化）      <br />
+select @@transaction_isolation; 查看事务隔离级别      <br />
 set [session | global] transaction isolation level {Read Uncommitted | Read Uncommitted | Repeatable Read | Serializable} 设置事务隔离级别</p>
 
 
