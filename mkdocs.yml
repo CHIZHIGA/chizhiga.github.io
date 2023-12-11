@@ -15,8 +15,11 @@ nav:
     - MySQL: mk/MySQL.md
   - Demo: 
     - 福州大学教务处: mk/05.福大教务处-正文.html
-  - 控制科研:
-    - Research Proposal: control/pre/29.md
+  - 控制:
+    - 先导课:
+      - Research Proposal: control/pre/29.md
+    - FZU:
+      - Proportional controller design for a feedback system: control/fz/ass1.md
   
   
 
