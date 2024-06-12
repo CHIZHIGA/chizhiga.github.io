@@ -19,8 +19,14 @@ nav:
     - 先导课:
       - Research Proposal: control/pre/29.md
       - 理工科科研基础: control/pre/01.md 
-    - MIEZ:
+    - MIEC:
       - Proportional controller design for a feedback system: control/miec/ass1.md
+  - 25fall:
+    - fall/index.md
+    - 英国: fall/EL.md
+    - 香港: fall/HK.md
+    - 新加坡: fall/XP.md
+
   
   
 
