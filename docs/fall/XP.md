@@ -5,6 +5,8 @@
 
 https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-computer-control-automation#additionaiInformation
 
+**这个应该是最契合的专业，bar好像也不太高，但是录取时间不是很早**
+
 #### 专业选修科目（学生须选修5门专业选修科目中至少选修4门）
 | Course Code | Course Title                                     | Course Content                                                                                                                                                                                                         | AUs |
 |-------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
@@ -20,6 +22,7 @@ https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-compute
 * ​Master of Science (电)
 
 ## NUS
+* 2024/6/13 NUS专业还没全出
 ### MSc (Computer Engineering) – Machine Intelligence and Applications (MIA) Specialisation S$57,880.00 (including 9% GST)
 
 https://masters.nus.edu.sg/programmes/master-of-science-(computer-engineering)/msc-(computer-engineering)---machine-intelligence-and-applications-specialisation
