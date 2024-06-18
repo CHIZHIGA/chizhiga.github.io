@@ -1,5 +1,7 @@
 # 英国
+
 ## IC
+
 ### Medical Robotics and Image-Guided Intervention streams（研究型）£43,250
 
 https://www.imperial.ac.uk/study/courses/postgraduate-taught/clinical-robotics-ai/#course-entry-requirements-id
@@ -19,8 +21,9 @@ IELTS: 6.5 overall (minimum 6.0 in all elements)
 
 **IELTS: 7.0 overall (minimum 6.5 in all elements)**
 
-## UCL 
-### Mechanical Engineering MSc London, Bloomsbury £19,300
+## UCL 伦敦大学学院
+
+### Mechanical Engineering MSc London, Bloomsbury £19,300 机械工程
 
 https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/mechanical-engineering-msc
 
@@ -32,7 +35,8 @@ IELTS: Overall score of 6.5 and a minimum of 6.0 in each component (这个语言
 
  控制与机器人（有这个的话，这个项目也是不错，而且主要是语言要求）
 
-### Systems Engineering for the Internet of Things MSc London, Stratford (UCL East) £19,300
+### Systems Engineering for the Internet of Things MSc London, Stratford (UCL East) £19,300 物联网系统工程
+
 https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/systems-engineering-internet-things-msc
 
 这个课程匹配度也高，相应的雅思要求也高

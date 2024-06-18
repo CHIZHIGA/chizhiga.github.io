@@ -1,7 +1,10 @@
 # 新加坡
+
 雅思申请时有效即可，已达标。
-## NTU
-### ​Master of Science (Computer Control & Automation) S$43,600 (including 9% GST)
+
+## NTU 南洋理工大学
+
+### ​Master of Science (Computer Control & Automation) S$43,600 (including 9% GST) 计算机控制与自动化
 
 https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-computer-control-automation#additionaiInformation
 
@@ -21,13 +24,17 @@ https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-compute
 * ​Master of Science (Mechanical Engineering)
 * ​Master of Science (电)
 
-## NUS
+## NUS 新加坡国立大学
+
 * 2024/6/13 NUS专业还没全出
-### MSc (Computer Engineering) – Machine Intelligence and Applications (MIA) Specialisation S$57,880.00 (including 9% GST)
+
+### MSc (Computer Engineering) – Machine Intelligence and Applications (MIA) Specialisation S$57,880.00 (including 9% GST) 机器智能与应用
 
 https://masters.nus.edu.sg/programmes/master-of-science-(computer-engineering)/msc-(computer-engineering)---machine-intelligence-and-applications-specialisation
 
 暂时只看了这个方案，但是我觉得难度应该很大。。。
+
+我的本科专业叫“机器人和智能设备”，自然是合适的，但是这个我觉得我没GRE机会不大，然后NUS还有专业没出，所以只能先暂定
 
 #### 核心/基础课程
 
