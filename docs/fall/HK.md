@@ -4,11 +4,42 @@
 
 ## HKU 香港大学
 
+### RIS 机器人与智能系统
+
+https://admissions.hku.hk/tpg/programme/master-science-engineering-robotics-and-intelligent-systems
+
+不用说，我的本科专业是机器人与智能设备，completely match，首选
+
+#### Courses
+
+| 课程代码 | 课程名 |
+| --- | --- |
+| ELEC6008 | 模式识别与机器学习 |
+| ELEC6026 | 数字信号处理 |
+| ELEC6099 | 无线通信与网络 |
+| ELEC6100 | 数字通信 |
+| IMSE7111 | 智能优化 |
+| IMSE7128 | 人因工程 |
+| IMSE7137 | 虚拟现实系统工程 |
+| IMSE7138 | 医疗系统工程 |
+| IMSE7139 | 物理系统 |
+| IMSE7140 | 工业工程中的机器学习 |
+| IMSE7141 | 数字孪生技术 |
+| IMSE7142 | 工业工程的计算方法 |
+| IMSE7143 | 物联网 |
+| IMSE7504 | 人机交互 |
+| IMSE7505 | 智能交通与自动驾驶 |
+| IMSE7506 | 智能系统与机器人前沿 |
+| MECH7010 | 当代机器人技术 |
+| MECH7017 | 机器人控制 |
+| MECH7020 | 自主无人机 |
+| MECH7021 | 领域和服务机器人 |
+
 ### ME 机械工程
 
 https://admissions.hku.hk/tpg/programme/master-science-engineering-mechanical-engineering
 
-HKU的Title我很喜欢，这个专业虽然不一定比EEE更match，但是我觉得为了港大可以多申请一个专业
+这个专业不一比EEE更match，更不用说RIS
 
 #### 研究生课程
 
