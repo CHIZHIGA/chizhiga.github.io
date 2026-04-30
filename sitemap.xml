@@ -3,25 +3,31 @@
     <url>
          <loc>https://chizhiga.github.io/</loc>
          <lastmod>2026-04-30</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://chizhiga.github.io/about/</loc>
          <lastmod>2026-04-30</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://chizhiga.github.io/about/awards/</loc>
          <lastmod>2026-04-30</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://chizhiga.github.io/about/hobbies/</loc>
          <lastmod>2026-04-30</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://chizhiga.github.io/mk/study_records/software_engineering/JavaWeb/</loc>
          <lastmod>2026-04-30</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://chizhiga.github.io/mk/study_records/software_engineering/MySQL/</loc>
          <lastmod>2026-04-30</lastmod>
+         <changefreq>daily</changefreq>
     </url>
 </urlset>
