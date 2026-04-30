@@ -14,6 +14,8 @@ nav:
     - 软件工程:  
       - JavaWeb: mk/study_records/software_engineering/JavaWeb.md
       - MySQL: mk//study_records/software_engineering/MySQL.md
+  - 奖项: about/awards.md
+  - 爱好: about/hobbies.md
 
   
   
