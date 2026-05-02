@@ -12,8 +12,9 @@ nav:
   - Home: about/index.md
   - 技术栈（学习记录）:
     - 软件工程:  
-      - JavaWeb: mk/study_records/software_engineering/JavaWeb.md
-      - MySQL: mk//study_records/software_engineering/MySQL.md
+      - 1. Git: mk/study_records/software_engineering/Git/Git.md
+      - 10. MySQL: mk//study_records/software_engineering/MySQL.md
+      - 11. JavaWeb: mk/study_records/software_engineering/JavaWeb.md
   - 奖项: about/awards.md
   - 爱好: about/hobbies.md
 
