@@ -1,7 +1,38 @@
 # 爱好
 ## 户外运动
+### 徒步
+
+大四临毕业之际开始对徒步感兴趣，先后在厦门天竺山和福州棋盘石完成圈越和登顶。
+
+硕士阶段加入了[UCL Hiking Club](https://linktr.ee/uclhiking)，并在开学初就完成了Walk Leader测验和选拔，并在完成官方[急救训练](Zhenggang.pdf)后，加入社团subcommittee的媒体部门，并独立运营社团[官方小红书账号](https://xhslink.com/m/44hAhvydQE5)。
+
+在Yorkshire住宿徒步后，作为唯一中国学生受采访刊登在社团杂志上。
+
+Section 3 — Hostel & social experience
+
+Zhenggang
+
+- Given that this was your first residential, what was the hostel like as a base for the trip? How did spending the mornings, evenings and nights together shape the atmosphere of the trip and hikes?
+
+As this was my first residential, I was initially quite hesitant to sign up. However, the hostel turned out to be a surprisingly comfortable and important base for the trip. It had four beds per room, hot water, Wi-Fi, and well-separated wet and dry areas—simple, but exactly what was needed after long days outdoors. Spending mornings and evenings together in this shared space created a strong sense of routine and connection. Unlike a typical London day hike where everyone disperses afterwards, the hostel kept the group together, shaping both the atmosphere of the hikes and the overall experience.
+
+- What did the group dynamic feel like once everyone came back from hiking? Were there any memorable evening moments—group dinners, games, pub trips, chaotic cooking, late-night conversations?
+
+After each day of hiking, the group dynamic became especially lively. Around 60 people gathered back at the hostel, and evenings were filled with shared activities. Cooking together was one of the most memorable parts—it was often chaotic but also highly collaborative, with people naturally stepping in to help prepare food or clean up. After dinner, groups formed around board games, conversations, and laughter. These moments made it easy to meet people from different backgrounds, and we often ended up discussing cultures, traditions, and travel experiences late into the evening.
+
+- How did you feel when coming back to the hostel after the eventful weather of this residential? E.g., compared with a normal London day hike?
+
+Coming back to the hostel after challenging weather made the experience even more meaningful. On the second day, when heavy rain left my clothes and backpack soaked, returning to a warm indoor space felt like a relief. Compared to a normal day hike, where discomfort ends quickly once you get home, the residential experience meant sharing both the tough moments and the recovery process together. Being part of the easy group also meant we returned earlier, giving me time to rest and recharge before socializing again.
+
+- What did the hostel—and the way people behaved in it—reveal to you about our university club culture on your first residential? E.g., did the trip bring together people who might not usually have spent time together? Any small moments that best capture the social atmosphere of the weekend, such as cooking together, playing games, etc.?
+
+The hostel environment revealed a lot about the club’s culture. It brought together people who might not usually interact and encouraged a sense of shared responsibility. Small moments—like cooking meals together, cleaning up as a group, or simply sitting down to play games—captured this best. Even minor inconveniences, such as a loudly snoring roommate, became part of a shared experience rather than a frustration. Overall, the trip felt welcoming and inclusive, and by the end, I found myself genuinely reluctant to leave.
+
 ### 游泳
 游泳消除了我的烦恼，让身体焕然一新，也让我有勇气去面对各种挑战。我非常享受浸入水中的感觉。此外，我还是福州大学游泳队的成员，在那里结识了许多真诚的朋友。我在过去五年里，已达到**中国国家三级运动员50米**自由泳标准，并赢得了4项个人奖项，4项团体奖项（**一枚金牌，两枚银牌**）。
+
+![福州大学游泳队](5.jpg)
+
 ### 健身
 ### 乒乓球
 ## 室内活动
