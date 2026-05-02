@@ -2,7 +2,7 @@
 ## 户外运动
 ### 徒步
 
-大四临毕业之际开始对徒步感兴趣，先后在厦门天竺山和福州棋盘石完成圈越和登顶。
+高中开始远足，大四临毕业开始对徒步感兴趣，先后在厦门天竺山和福州棋盘石完成圈越和登顶。
 
 硕士阶段加入了[UCL Hiking Club](https://linktr.ee/uclhiking)，并在开学初就完成了Walk Leader测验和选拔，并在完成官方[急救训练](Zhenggang.pdf)后，加入社团subcommittee的媒体部门，并独立运营社团[官方小红书账号](https://xhslink.com/m/44hAhvydQE5)。
 
@@ -29,14 +29,14 @@ Coming back to the hostel after challenging weather made the experience even mor
 The hostel environment revealed a lot about the club’s culture. It brought together people who might not usually interact and encouraged a sense of shared responsibility. Small moments—like cooking meals together, cleaning up as a group, or simply sitting down to play games—captured this best. Even minor inconveniences, such as a loudly snoring roommate, became part of a shared experience rather than a frustration. Overall, the trip felt welcoming and inclusive, and by the end, I found myself genuinely reluctant to leave.
 
 ### 游泳
-游泳消除了我的烦恼，让身体焕然一新，也让我有勇气去面对各种挑战。我非常享受浸入水中的感觉。此外，我还是福州大学游泳队的成员，在那里结识了许多真诚的朋友。我在过去五年里，已达到**中国国家三级运动员50米**自由泳标准，并赢得了4项个人奖项，4项团体奖项（**一枚金牌，两枚银牌**）。
+游泳消除了我的烦恼，让身体焕然一新，也让我有勇气去面对各种挑战。我非常享受浸入水中的感觉。我还是福州大学游泳队的成员，在那里结识了许多真诚的朋友。我在过去五年里，已达到**中国国家三级运动员50米**自由泳标准，并赢得了4项个人奖项，4项团体奖项（**一枚金牌，两枚银牌**）。
 
 ![福州大学游泳队](5.jpg)
 
-### 健身
-### 乒乓球
 ## 室内活动
 ### 电影
+
+
 
 #### 猫鼠游戏 2:14:25
 ```
@@ -128,8 +128,9 @@ Maybe there was a bee.
 The only bee u’re attracting is B-R-Y-C-E.
 I’m telling u, that boy is lost in love land.
 ```
-#### 碟中谍7 07.30-10.00
+#### 碟中谍7
 ```
+07.30-10.00
 Good evening, Mr. Hunt.
 It’s been a long time.
 Our lives are the sum of our choices and we cannot escape the past.
@@ -138,16 +139,13 @@ Join the IMF or spend your life in prison.
 Because of your unique natural talents, you government forgave you.
 But we will never forget.
 Just you will never forget the death that brought you to us all those years ago.
-```
-#### 碟中谍7 10.10-11.50
-```
+10.10-11.50
 This is to remind you of your oath and allegiance to us.
 The stakes of this mission are higher than ever.
 Your habitual rogue behavior will not be tolerated.
 Should you choose to accept, it is imperative that you listen.
 Your government is searching for a key.
 Its purpose, its vital importance to us, is none of your concern.
-
 Your government is searching for a key.
 Its purpose, its vital importance to us, is none of your concern.
 What should concern you is the involvement of your friend Ilsa F.
@@ -155,4 +153,3 @@ She killed a courier in Istanbul.
 And we believe he was carring one half of the key we’re searching for.
 Why she has chosen to interfere in this affair is a mystery, as are her whereabouts.
 ```
-### 掼蛋
