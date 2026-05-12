@@ -33,12 +33,6 @@ There are many different __version control systems__:
 - Ability to __undo mistakes__.
 - Maintain __several versions__ of the code at a time.
 
-### Git != GitHub
-
-- __Git__: version control system tool to manage source code history.
-
-- __GitHub__: hosting service for Git repositories.
-
 ## Solo Git
 
 ### The Levels of Git
@@ -72,6 +66,14 @@ Here, `git push` will push your whole history onto the server, and now you'll be
 ## Collaboration
 
 ### The Levels of Git
+
+  | Command |   | description                                                                                           |
+  |---------|---|-------------------------------------------------------------------------------------------------------|
+  | Push     |   | Update a linked remote repository with commits that have been made in a local copy of the repository. |
+  | Merge  |   | Combine two different histories, potentially resolving conflicting changes.                           |
+  | Add   |   | Send any new changes to files in the repository to the staging area.                                  |
+  | Pull    |   | Retrieve commits from a linked remote repository, adding them to a local copy of the repository.      |
+  | Commit   |   | Record the changes in the staging area to the repository history.                                     |
 
 ![The Levels of Git](5.png)
 
@@ -111,10 +113,27 @@ This is best used to create documentation for a program you write, but you can u
 
 ## Bisect
 
-**git bisect = 用二分查找定位 bug 的提交**
+In the context of software engineering and version control, **`git bisect`** is a powerful debugging tool that uses a **binary search algorithm** to find the specific commit that introduced a bug or regression.
 
-👉 当你知道：
-- 现在版本是 ❌（有 bug）
-- 过去某个版本是 ✅（正常）
+---
 
-Git 可以帮你自动缩小范围，快速找到“第一个出问题的 commit”。
+### **The Manual Workflow**
+
+To use it, you identify a "bad" commit (where the bug exists) and a "good" commit (a point in the past where the code worked correctly). Git then starts the search:
+
+1. **Start the process:** `git bisect start`
+2. **Define the boundaries:**
+* `git bisect bad` (usually the current state)
+* `git bisect good <commit_hash>` (a known working state)
+
+
+3. **The Search:** Git checks out a commit in the middle of that range.
+4. **Test:** You test the code.
+* If it’s broken: `git bisect bad`
+* If it’s working: `git bisect good`
+
+
+5. **Repeat:** Git narrows the range until it points to the exact "first bad commit."
+6. **Cleanup:** `git bisect reset` to return to your original branch.
+
+---

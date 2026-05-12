@@ -15,9 +15,13 @@ nav:
   - Hobbies: about/hobbies/hobbies.md
   - 技术栈（学习记录）:
     - 软件工程:  
-      - 1. Version Control: mk/study_records/software_engineering/Git/Git.md
-      - 10. MySQL: mk//study_records/software_engineering/MySQL.md
-      - 11. JavaWeb: mk/study_records/software_engineering/JavaWeb.md
+      - 1. Git: mk/study_records/software_engineering/Git/Git.md
+      - 2. GitHub: mk/study_records/software_engineering/Git/GitHub.md
+      - 3. Python: mk/study_records/software_engineering/Python/Python.md
+      - 4. Refactoring: mk/study_records/software_engineering/Refactoring/Refactoring.md
+      - 5. Testing: mk/study_records/software_engineering/Test/Test.md
+      - 6. MySQL: mk//study_records/software_engineering/MySQL.md
+      - 7. JavaWeb: mk/study_records/software_engineering/JavaWeb.md
 
   
   
