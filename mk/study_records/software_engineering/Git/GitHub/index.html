@@ -1,0 +1,2434 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="the notes record by chizhiga">
+      
+      
+        <meta name="author" content="chizhiga">
+      
+      
+        <link rel="canonical" href="https://chizhiga.github.io/mk/study_records/software_engineering/Git/GitHub/">
+      
+      
+        <link rel="prev" href="../Git/">
+      
+      
+        <link rel="next" href="../../Python/Python/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>2. GitHub - chizhiga Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#github" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../../.." title="chizhiga Docs" class="md-header__button md-logo" aria-label="chizhiga Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            chizhiga Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. GitHub
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="blue"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CHIZHIGA/chizhiga.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FZU-chizhiga
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../about/awards/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Awards
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../about/hobbies/hobbies/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hobbies
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Git/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  技术栈（学习记录）
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="chizhiga Docs" class="md-nav__button md-logo" aria-label="chizhiga Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    chizhiga Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CHIZHIGA/chizhiga.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FZU-chizhiga
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../about/awards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Awards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../about/hobbies/hobbies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hobbies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    技术栈（学习记录）
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    技术栈（学习记录）
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    软件工程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    软件工程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. GitHub
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-git-vs-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Git vs GitHub
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Git vs GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. GitHub 项目结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. GitHub 项目结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#src" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        src/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tests/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        docs/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .github/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citationcff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CITATION.cff
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .gitignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. README
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. README">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        README 应该包含什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-license" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. LICENSE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. LICENSE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么重要
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-citation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. CITATION 文件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. CITATION 文件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fork
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Fork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fork 是什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-contributors-fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 external contributors 用 fork
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-pull-requestpr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Pull Request（PR）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Pull Request（PR）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PR 的作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么重要
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-continuous-integrationci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Continuous Integration（CI）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Continuous Integration（CI）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么重要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-development-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Development Lifecycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Development Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        标准流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-agile-vs-waterfall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Agile vs Waterfall
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Agile vs Waterfall">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-waterfall-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Waterfall Methodology
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-agile-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Agile Methodology
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#side-by-side-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Side-by-Side Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-one-should-you-choose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which One Should You Choose?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Which One Should You Choose?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choose-waterfall-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choose Waterfall if...
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choose-agile-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choose Agile if...
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-explain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Explain
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Explain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-use-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why use branches?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-use-pr-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why use PR review?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-use-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why use CI?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-use-forks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why use forks?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python/Python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Refactoring/Refactoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Refactoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Test/Test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MySQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. MySQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JavaWeb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. JavaWeb
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-git-vs-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Git vs GitHub
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Git vs GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. GitHub 项目结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. GitHub 项目结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#src" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        src/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tests/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        docs/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .github/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citationcff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CITATION.cff
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .gitignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. README
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. README">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        README 应该包含什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-license" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. LICENSE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. LICENSE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么重要
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-citation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. CITATION 文件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. CITATION 文件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fork
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Fork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fork 是什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-contributors-fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 external contributors 用 fork
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-pull-requestpr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Pull Request（PR）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Pull Request（PR）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PR 的作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么重要
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-continuous-integrationci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Continuous Integration（CI）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Continuous Integration（CI）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么重要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-development-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Development Lifecycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Development Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        标准流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-agile-vs-waterfall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Agile vs Waterfall
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Agile vs Waterfall">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-waterfall-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Waterfall Methodology
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-agile-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Agile Methodology
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#side-by-side-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Side-by-Side Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-one-should-you-choose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which One Should You Choose?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Which One Should You Choose?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choose-waterfall-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choose Waterfall if...
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choose-agile-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choose Agile if...
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-explain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Explain
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Explain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-use-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why use branches?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-use-pr-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why use PR review?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-use-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why use CI?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-use-forks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why use forks?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+  <nav class="md-path" aria-label="导航栏" >
+    <ol class="md-path__list">
+      
+      
+        
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../Git/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    技术栈（学习记录）
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../Git/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    软件工程
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="github">GitHub</h1>
+<h2 id="1-git-vs-github">1. Git vs GitHub</h2>
+<h3 id="git">Git</h3>
+<p>👉 version control system</p>
+<p>负责：</p>
+<ul>
+<li>tracking history</li>
+<li>commits</li>
+<li>branches</li>
+<li>merges</li>
+</ul>
+<p>本地也能用。</p>
+<hr />
+<h3 id="github_1">GitHub</h3>
+<p>👉 online hosting platform for Git repositories</p>
+<p>负责：</p>
+<ul>
+<li>collaboration</li>
+<li>pull requests</li>
+<li>issue tracking</li>
+<li>code review</li>
+<li>CI workflows</li>
+</ul>
+<blockquote>
+<p>Git is the version control system itself, whereas GitHub is a cloud platform for hosting and collaborating on Git repositories.</p>
+</blockquote>
+<hr />
+<h2 id="2-github">2. GitHub 项目结构</h2>
+<pre><code>src/
+tests/
+docs/
+.github/
+README.md
+LICENSE
+CITATION.cff
+.gitignore
+pyproject.toml
+</code></pre>
+<hr />
+<h3 id="src">src/</h3>
+<p>源码。</p>
+<hr />
+<h3 id="tests">tests/</h3>
+<p>pytest tests。</p>
+<hr />
+<h3 id="docs">docs/</h3>
+<p>documentation source。</p>
+<hr />
+<h3 id="github_2">.github/</h3>
+<p>GitHub workflows/config。</p>
+<p>通常：</p>
+<pre><code>.github/workflows/
+</code></pre>
+<p>里面是 CI。</p>
+<hr />
+<h3 id="citationcff">CITATION.cff</h3>
+<blockquote>
+<p>To ensure credit is easily given to the developers, or to provide a DOI / objective reference to the software version used in an analysis.</p>
+</blockquote>
+<h3 id="gitignore">.gitignore</h3>
+<p>What is the purpose of the <code>.gitignore</code> file?</p>
+<p>To prevent unwanted files from being tracked by the repository.</p>
+<p>Besides auxiliary and artefact Python files, and folders containing IDE settings, are there any other file types or patterns that you recommend developer add to the <code>.gitignore</code> file?</p>
+<p>• Recommending the project-specific data file types(.mpth and .mfmt) to be ignored (with the possible exception of the
+test data files). since these may bloat the repository with large files / might not be appropriate for sharing if they are research-specific.</p>
+<p>• Recommending the output directory for the build HTML documentation to be ignored. since the docs can be regenerated from the sourcefiles anyway.</p>
+<hr />
+<h2 id="3-readme">3. README</h2>
+<p>README 是：</p>
+<blockquote>
+<p>newcomer first entry point</p>
+</blockquote>
+<hr />
+<h3 id="readme">README 应该包含什么</h3>
+<p>至少：</p>
+<ul>
+<li>project overview</li>
+<li>installation</li>
+<li>usage</li>
+<li>examples</li>
+<li>dependencies</li>
+<li>how to run tests</li>
+</ul>
+<blockquote>
+<p>为什么 README 很重要？</p>
+</blockquote>
+<ul>
+<li>helps onboarding</li>
+<li>explains project purpose</li>
+<li>improves usability</li>
+<li>assists contributors</li>
+</ul>
+<hr />
+<h2 id="4-license">4. LICENSE</h2>
+<p>定义：</p>
+<blockquote>
+<p>legal permissions/restrictions</p>
+</blockquote>
+<hr />
+<h3 id="_1">为什么重要</h3>
+<p>没有 LICENSE：</p>
+<p>默认：</p>
+<pre><code>all rights reserved
+</code></pre>
+<p>别人理论上不能合法使用。</p>
+<blockquote>
+<p>To ensure users know what rights they have to use the software, or to prevent</p>
+</blockquote>
+<hr />
+<h2 id="5-citation">5. CITATION 文件</h2>
+<h3 id="_2">作用</h3>
+<p>告诉别人：</p>
+<ul>
+<li>如何引用项目</li>
+<li>如何 credit authors</li>
+</ul>
+<p>特别：</p>
+<ul>
+<li>research software</li>
+<li>academic software</li>
+</ul>
+<hr />
+<h2 id="6-fork">6. Fork</h2>
+<h3 id="fork">fork 是什么</h3>
+<p>GitHub 上：</p>
+<ul>
+<li>复制一个 repo</li>
+<li>到你自己的账户</li>
+</ul>
+<hr />
+<h3 id="external-contributors-fork">为什么 external contributors 用 fork</h3>
+<p>因为：</p>
+<ul>
+<li>maintainers 不会给陌生人 write access</li>
+<li>protects main repository</li>
+<li>contributors can work independently</li>
+<li>changes reviewed via PR</li>
+</ul>
+<hr />
+<h3 id="workflow">workflow</h3>
+<pre><code>fork
+↓
+clone fork
+↓
+branch
+↓
+commit
+↓
+push
+↓
+pull request
+</code></pre>
+<hr />
+<h2 id="7-pull-requestpr">7. Pull Request（PR）</h2>
+<h3 id="_3">本质</h3>
+<blockquote>
+<p>request to merge changes</p>
+</blockquote>
+<p>不是 merge 本身。</p>
+<hr />
+<h3 id="pr">PR 的作用</h3>
+<ul>
+<li>code review</li>
+<li>discussion</li>
+<li>testing</li>
+<li>quality control</li>
+</ul>
+<blockquote>
+<p>为什么 PR review 重要？</p>
+</blockquote>
+<p>标准：</p>
+<ul>
+<li>catches bugs</li>
+<li>improves code quality</li>
+<li>ensures consistency</li>
+<li>knowledge sharing</li>
+</ul>
+<hr />
+<h2 id="8-issues">8. Issues</h2>
+<p>GitHub issue 用于：</p>
+<ul>
+<li>bug reports</li>
+<li>feature requests</li>
+<li>task tracking</li>
+<li>discussion</li>
+</ul>
+<hr />
+<h3 id="_4">为什么重要</h3>
+<ul>
+<li>organization</li>
+<li>prioritization</li>
+<li>transparency</li>
+</ul>
+<hr />
+<h2 id="9-continuous-integrationci">9. Continuous Integration（CI）</h2>
+<h3 id="_5">本质</h3>
+<p>自动：</p>
+<ul>
+<li>run tests</li>
+<li>check formatting</li>
+<li>build docs</li>
+</ul>
+<p>通常：</p>
+<pre><code>GitHub Actions
+</code></pre>
+<p>• Changes to a codebase should be frequent and incremental.</p>
+<p>• Appropriate builds and tests should be run (normally automatically) before allowing changes to be approved and implemented, to ensure the project is always in a workable state.</p>
+<hr />
+<h3 id="_6">为什么重要</h3>
+<ul>
+<li>catches problems early</li>
+<li>prevents broken code entering main</li>
+<li>automates quality checks</li>
+</ul>
+<hr />
+<h3 id="workflow_1">workflow</h3>
+<pre><code>PR opened
+↓
+CI runs tests
+↓
+review
+↓
+merge
+</code></pre>
+<hr />
+<h2 id="10-development-lifecycle">10. Development Lifecycle</h2>
+<h3 id="_7">标准流程</h3>
+<pre><code>Issue
+↓
+Branch
+↓
+Development
+↓
+Testing
+↓
+Pull Request
+↓
+Code Review
+↓
+CI checks
+↓
+Merge
+</code></pre>
+<hr />
+<h2 id="11-agile-vs-waterfall">11. Agile vs Waterfall</h2>
+<p>Choosing between Agile and Waterfall is less about finding the "better" method and more about matching the right tool to the job. It’s the difference between building a bridge (Waterfall) and building a startup (Agile).</p>
+<hr />
+<h3 id="the-waterfall-methodology"><strong>The Waterfall Methodology</strong></h3>
+<p>Waterfall is the traditional, linear approach to project management. It moves in a logical, sequential flow: Requirements → Design → Implementation → Verification → Maintenance. Like a real waterfall, the water only flows one way—you can’t easily jump back up to the "Requirements" phase once you’re already testing the product.</p>
+<ul>
+<li><strong>Mindset:</strong> "Measure twice, cut once."</li>
+<li><strong>Structure:</strong> Heavily documented and disciplined.</li>
+<li><strong>Best For:</strong> Projects with a fixed scope, clear requirements, and a hard deadline.</li>
+</ul>
+<hr />
+<h3 id="the-agile-methodology"><strong>The Agile Methodology</strong></h3>
+<p>Agile is an iterative, incremental approach. Instead of one massive "Big Bang" release at the end, the project is broken into small, consumable chunks called <strong>Sprints</strong> (usually 1–4 weeks). After every sprint, you have a working product that you can test and improve.</p>
+<ul>
+<li><strong>Mindset:</strong> "Fail fast, learn faster."</li>
+<li><strong>Structure:</strong> Flexible, collaborative, and highly responsive to change.</li>
+<li><strong>Best For:</strong> Projects where the end goal is a bit fuzzy or where market conditions change rapidly.</li>
+</ul>
+<hr />
+<h3 id="side-by-side-comparison"><strong>Side-by-Side Comparison</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Waterfall</th>
+<th>Agile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project Flow</strong></td>
+<td>Linear &amp; Sequential</td>
+<td>Iterative &amp; Cyclical</td>
+</tr>
+<tr>
+<td><strong>Requirements</strong></td>
+<td>Defined upfront; hard to change.</td>
+<td>Evolves throughout the project.</td>
+</tr>
+<tr>
+<td><strong>Customer Involvement</strong></td>
+<td>High at the start and end.</td>
+<td>Constant throughout the process.</td>
+</tr>
+<tr>
+<td><strong>Delivery</strong></td>
+<td>One single "Big Bang" release.</td>
+<td>Frequent, small releases.</td>
+</tr>
+<tr>
+<td><strong>Risk</strong></td>
+<td>High (errors found late are costly).</td>
+<td>Low (errors found and fixed early).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="which-one-should-you-choose"><strong>Which One Should You Choose?</strong></h3>
+<h4 id="choose-waterfall-if"><strong>Choose Waterfall if...</strong></h4>
+<ul>
+<li>The project is <strong>simple and predictable</strong>.</li>
+<li>The requirements are <strong>fixed</strong> and unlikely to change (e.g., a regulatory compliance project).</li>
+<li>You are working in a highly regulated industry where <strong>extensive documentation</strong> is legally required.</li>
+<li>The client prefers a hands-off approach until the final reveal.</li>
+</ul>
+<h4 id="choose-agile-if"><strong>Choose Agile if...</strong></h4>
+<ul>
+<li>The project is <strong>complex</strong> or the final product isn't fully defined.</li>
+<li>You need to get a <strong>Minimum Viable Product (MVP)</strong> to market quickly.</li>
+<li>You have a dedicated team and a client who wants to be <strong>heavily involved</strong>.</li>
+<li>The industry is fast-moving (like software or app development).</li>
+</ul>
+<hr />
+<p>Most modern tech companies actually land somewhere in the middle—often called "Agile-fall"—where they plan the big picture with a Waterfall mindset but execute the daily work using Agile Sprints.</p>
+<h2 id="12-explain">12. Explain</h2>
+<h3 id="why-use-branches">Why use branches?</h3>
+<pre><code>Branches isolate development work and protect the stable main branch.
+</code></pre>
+<hr />
+<h3 id="why-use-pr-review">Why use PR review?</h3>
+<pre><code>PR review improves code quality and helps catch bugs before merging.
+</code></pre>
+<hr />
+<h3 id="why-use-ci">Why use CI?</h3>
+<pre><code>CI automatically checks code quality and prevents broken changes from entering the main branch.
+</code></pre>
+<hr />
+<h3 id="why-use-forks">Why use forks?</h3>
+<pre><code>Forks allow external contributors to work safely without direct write access to the main repository.
+</code></pre>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 chizhiga
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "search.highlight"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
