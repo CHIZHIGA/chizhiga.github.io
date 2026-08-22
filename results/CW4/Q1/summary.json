@@ -1,0 +1,18 @@
+{
+  "samples": 1800,
+  "original_features": 83,
+  "selected_components": 20,
+  "retained_variance": 0.9021260687267137,
+  "hungarian_mappings": {
+    "full": {
+      "2": 0,
+      "1": 1,
+      "0": 2
+    },
+    "pca": {
+      "2": 0,
+      "1": 1,
+      "0": 2
+    }
+  }
+}

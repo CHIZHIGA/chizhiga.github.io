@@ -1,0 +1,30 @@
+{
+  "checkpoint": "results/ECG/ECG_Recognition.pt",
+  "evaluation_code": "src/ECG.py",
+  "split_seed": 42,
+  "split_sizes": {
+    "train": 4000,
+    "valid": 500,
+    "test": 500
+  },
+  "test_loss": 0.014247427647933363,
+  "test_accuracy": 1.0,
+  "test_precision_weighted": 1.0,
+  "test_recall_weighted": 1.0,
+  "test_f1_weighted": 1.0,
+  "class_order": [
+    "100",
+    "101",
+    "103",
+    "105",
+    "112"
+  ],
+  "test_confusion_matrix": [
+    [102, 0, 0, 0, 0],
+    [0, 105, 0, 0, 0],
+    [0, 0, 102, 0, 0],
+    [0, 0, 0, 94, 0],
+    [0, 0, 0, 0, 97]
+  ],
+  "evaluation_note": "Saved state_dict reloaded on CPU; dataset and deterministic seed-42 split rebuilt with src/ECG.py."
+}

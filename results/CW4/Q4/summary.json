@@ -1,0 +1,15 @@
+{
+  "raw_samples": 3001,
+  "removed_first_sample": 0.0,
+  "modelled_samples": 3000,
+  "train_samples": 1800,
+  "test_samples": 1200,
+  "train_mean": 1026.0311111111112,
+  "test_mean": 997.8991666666667,
+  "assumed_decomposition_period": 200,
+  "selected_transform": "Original",
+  "best_requested_model_by_RSS": "MA(2)",
+  "best_requested_RSS": 4695514.146689498,
+  "best_requested_RMSE": 62.55340482799143,
+  "best_requested_MAE": 47.35099659469241
+}

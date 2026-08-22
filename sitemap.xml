@@ -2,46 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://chizhiga.github.io/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
     </url>
     <url>
          <loc>https://chizhiga.github.io/about/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
     </url>
     <url>
          <loc>https://chizhiga.github.io/about/awards/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
     </url>
     <url>
          <loc>https://chizhiga.github.io/about/hobbies/hobbies/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
     </url>
     <url>
          <loc>https://chizhiga.github.io/mk/study_records/software_engineering/JavaWeb/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
     </url>
     <url>
          <loc>https://chizhiga.github.io/mk/study_records/software_engineering/MySQL/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
     </url>
     <url>
          <loc>https://chizhiga.github.io/mk/study_records/software_engineering/Git/Git/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
     </url>
     <url>
          <loc>https://chizhiga.github.io/mk/study_records/software_engineering/Git/GitHub/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
     </url>
     <url>
          <loc>https://chizhiga.github.io/mk/study_records/software_engineering/Python/Python/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
     </url>
     <url>
          <loc>https://chizhiga.github.io/mk/study_records/software_engineering/Refactoring/Refactoring/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
     </url>
     <url>
          <loc>https://chizhiga.github.io/mk/study_records/software_engineering/Test/Test/</loc>
-         <lastmod>2026-05-12</lastmod>
+         <lastmod>2026-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://chizhiga.github.io/results/docs/04_Project_Portfolio_CN/</loc>
+         <lastmod>2026-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://chizhiga.github.io/results/docs/CW4/</loc>
+         <lastmod>2026-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://chizhiga.github.io/results/docs/ECG/</loc>
+         <lastmod>2026-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://chizhiga.github.io/results/docs/EMG/</loc>
+         <lastmod>2026-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://chizhiga.github.io/results/docs/FYP/</loc>
+         <lastmod>2026-08-22</lastmod>
     </url>
 </urlset>
