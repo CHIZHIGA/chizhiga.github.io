@@ -8,6 +8,8 @@
 
 在Yorkshire住宿徒步后，作为唯一中国学生受采访刊登在社团杂志上。
 
+在2026/08/03-2026/08/06，独自四天完成全世界最著名徒步线路朝圣之路葡萄牙海岸线最后100km（西班牙境内）。从Vigo日均25km走到Santiago，并获得[朝圣者官方证书](buencamino.jpg)。
+
 Section 3 — Hostel & social experience
 
 Zhenggang
@@ -29,9 +31,7 @@ Coming back to the hostel after challenging weather made the experience even mor
 The hostel environment revealed a lot about the club’s culture. It brought together people who might not usually interact and encouraged a sense of shared responsibility. Small moments—like cooking meals together, cleaning up as a group, or simply sitting down to play games—captured this best. Even minor inconveniences, such as a loudly snoring roommate, became part of a shared experience rather than a frustration. Overall, the trip felt welcoming and inclusive, and by the end, I found myself genuinely reluctant to leave.
 
 ### 游泳
-游泳消除了我的烦恼，让身体焕然一新，也让我有勇气去面对各种挑战。我非常享受浸入水中的感觉。我还是福州大学游泳队的成员，在那里结识了许多真诚的朋友。我在过去五年里，已达到**中国国家三级运动员50米**自由泳标准，并赢得了4项个人奖项，4项团体奖项（**一枚金牌，两枚银牌**）。
-
-![福州大学游泳队](5.jpg)
+游泳消除了我的烦恼，让身体焕然一新，也让我有勇气去面对各种挑战。我非常享受浸入水中的感觉。我还是[福州大学游泳队](5.jpg)的成员，在那里结识了许多真诚的朋友。我在过去五年里，已达到**中国国家三级运动员50米**自由泳标准，并赢得了4项个人奖项，4项团体奖项（**一枚金牌，两枚银牌**）。
 
 ## 室内活动
 ### 电影

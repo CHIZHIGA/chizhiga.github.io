@@ -1,22 +1,52 @@
 # MkDocs build output
 site/
 
-# Python cache
+# Local ML experiment output (published pages live in docs/results/docs/)
+docs/results/CW4/
+docs/results/ECG/
+docs/results/EMG/
+
+# Python caches, test output, and tooling
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
 
 # Virtual environments
 .venv/
 venv/
 env/
 
-# Local editor and OS files
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor files
 .vs/
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
+
+# Operating-system metadata
 .DS_Store
 Thumbs.db
+Desktop.ini
+*:Zone.Identifier
+
+# Dependency and package-manager caches
+node_modules/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
