@@ -2,9 +2,7 @@
 site/
 
 # Local ML experiment output (published pages live in docs/results/docs/)
-docs/results/CW4/
-docs/results/ECG/
-docs/results/EMG/
+docs/mk/results
 
 # Python caches, test output, and tooling
 __pycache__/

@@ -20,14 +20,18 @@ nav:
       - 3. Python: mk/study_records/software_engineering/Python/Python.md
       - 4. Refactoring: mk/study_records/software_engineering/Refactoring/Refactoring.md
       - 5. Testing: mk/study_records/software_engineering/Test/Test.md
-      - 6. MySQL: mk//study_records/software_engineering/MySQL.md
-      - 7. JavaWeb: mk/study_records/software_engineering/JavaWeb.md
+      - 6. MySQL: mk/study_records/software_engineering/MySQL/MySQL.md
+      - 7. JavaWeb: mk/study_records/software_engineering/JavaWeb/JavaWeb.md
     - 机器学习:
       - 项目梗概:
-        - 结合可穿戴传感器和环境信标数据，更好地理解患者的生活体验: results/docs/04_Project_Portfolio_CN.md
-        - 肌电信号处理与分类在手势识别领域的应用: results/docs/EMG.md
-        - 可穿戴设备健康监测的信号处理: results/docs/ECG.md
-        - 心电图心律失常分类和心血管疾病分析: results/docs/CW4.md
+        - 结合可穿戴传感器和环境信标数据，更好地理解患者的生活体验: mk/results/docs/04_Project_Portfolio_CN.md
+        - 肌电信号处理与分类在手势识别领域的应用: mk/results/docs/EMG.md
+        - 可穿戴设备健康监测的信号处理: mk/results/docs/ECG.md
+        - 心电图心律失常分类和心血管疾病分析: mk/results/docs/CW4.md
+    - 医疗标准:
+      - 医用电气设备基本通用要求: mk/study_records/medical_standards/GB_9706_1.md
+      - 人工智能医疗器械通用要求: mk/study_records/medical_standards/YYT_1833.md
+      - 医疗器械软件生存周期过程: mk/study_records/medical_standards/YYT_0664.md
 
   
   
@@ -60,4 +64,16 @@ theme:
   icon: # 'clound' 右上角图标的另一种样式，需要注释下行
     repo: fontawesome/brands/github
 
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
