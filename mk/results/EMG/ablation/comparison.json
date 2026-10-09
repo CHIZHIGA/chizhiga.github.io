@@ -1,0 +1,57 @@
+[
+  {
+    "experiment": "group_baseline",
+    "split_mode": "group",
+    "wavelet": false,
+    "fft_branch": false,
+    "best_epoch": 13,
+    "test_accuracy": 0.8796169630642955,
+    "test_precision_weighted": 0.8816193289159794,
+    "test_recall_weighted": 0.8796169630642955,
+    "test_f1_weighted": 0.8764204623499063
+  },
+  {
+    "experiment": "group_wavelet",
+    "split_mode": "group",
+    "wavelet": true,
+    "fft_branch": false,
+    "best_epoch": 13,
+    "test_accuracy": 0.8816689466484268,
+    "test_precision_weighted": 0.882855488859483,
+    "test_recall_weighted": 0.8816689466484268,
+    "test_f1_weighted": 0.8785911575699589
+  },
+  {
+    "experiment": "group_fft",
+    "split_mode": "group",
+    "wavelet": false,
+    "fft_branch": true,
+    "best_epoch": 12,
+    "test_accuracy": 0.9110807113543091,
+    "test_precision_weighted": 0.9117673119694364,
+    "test_recall_weighted": 0.9110807113543091,
+    "test_f1_weighted": 0.9104877004558398
+  },
+  {
+    "experiment": "group_wavelet_fft",
+    "split_mode": "group",
+    "wavelet": true,
+    "fft_branch": true,
+    "best_epoch": 14,
+    "test_accuracy": 0.9165526675786594,
+    "test_precision_weighted": 0.9178059619431956,
+    "test_recall_weighted": 0.9165526675786593,
+    "test_f1_weighted": 0.9161051427745218
+  },
+  {
+    "experiment": "window_wavelet_fft",
+    "split_mode": "window",
+    "wavelet": true,
+    "fft_branch": true,
+    "best_epoch": 23,
+    "test_accuracy": 0.9465703971119134,
+    "test_precision_weighted": 0.9473040091557958,
+    "test_recall_weighted": 0.9465703971119135,
+    "test_f1_weighted": 0.9466490628480717
+  }
+]

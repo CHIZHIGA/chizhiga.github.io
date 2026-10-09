@@ -1,0 +1,52 @@
+{
+  "samples": 1800,
+  "selected_components": 20,
+  "best_hierarchical_configuration": {
+    "space": "PCA (20 PCs)",
+    "linkage": "ward",
+    "accuracy": 0.8772222222222222,
+    "f1_weighted": 0.8753856076485964
+  },
+  "hungarian_mappings": {
+    "full_ward": {
+      "1": 0,
+      "2": 1,
+      "0": 2
+    },
+    "full_complete": {
+      "0": 0,
+      "2": 1,
+      "1": 2
+    },
+    "full_average": {
+      "0": 0,
+      "2": 1,
+      "1": 2
+    },
+    "full_single": {
+      "0": 0,
+      "2": 1,
+      "1": 2
+    },
+    "pca_ward": {
+      "2": 0,
+      "1": 1,
+      "0": 2
+    },
+    "pca_complete": {
+      "1": 0,
+      "2": 1,
+      "0": 2
+    },
+    "pca_average": {
+      "2": 0,
+      "1": 1,
+      "0": 2
+    },
+    "pca_single": {
+      "0": 0,
+      "2": 1,
+      "1": 2
+    }
+  }
+}

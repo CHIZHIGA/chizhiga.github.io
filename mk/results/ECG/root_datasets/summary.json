@@ -1,0 +1,42 @@
+[
+  {
+    "name": "ecg_signals_preprocessed",
+    "source": "/home/czg/MPHY0047/CW/CW4/ecg_signals_preprocessed.csv",
+    "original_feature_count": 83,
+    "model_input_length": 260,
+    "label_to_index": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+    },
+    "split_sizes": {
+      "train": 1440,
+      "valid": 180,
+      "test": 180
+    },
+    "valid_loss": 0.18424875496162307,
+    "valid_acc": 0.9222222222222223,
+    "test_loss": 0.23327787717183432,
+    "test_acc": 0.9111111111111111,
+    "test_precision_weighted": 0.9144273953060238,
+    "test_recall_weighted": 0.9111111111111111,
+    "test_f1_weighted": 0.9111916907955016,
+    "test_confusion_matrix": [
+      [
+        55,
+        1,
+        0
+      ],
+      [
+        4,
+        53,
+        2
+      ],
+      [
+        0,
+        9,
+        56
+      ]
+    ]
+  }
+]

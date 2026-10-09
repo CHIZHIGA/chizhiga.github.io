@@ -1,0 +1,192 @@
+{
+  "source": "/home/czg/MPHY0047/CW/CW4/Data/EMG_data_for_gestures-master",
+  "window_size": 200,
+  "stride": 100,
+  "include_unmarked": false,
+  "split_mode": "group",
+  "split_metadata": {
+    "group_counts": {
+      "train": 696,
+      "valid": 85,
+      "test": 91
+    },
+    "group_overlaps": {
+      "train_valid": 0,
+      "train_test": 0,
+      "valid_test": 0
+    }
+  },
+  "wavelet_denoise": true,
+  "wavelet": {
+    "name": "Haar",
+    "levels": 3,
+    "threshold": "soft universal threshold from finest detail MAD",
+    "threshold_scale": 0.5
+  },
+  "fft_branch": false,
+  "fft_representation": null,
+  "requested_epochs": 40,
+  "training": {
+    "epochs_run": 18,
+    "best_epoch": 13,
+    "best_valid_loss": 0.33246162142326585,
+    "best_valid_acc": 0.8664179104477612,
+    "valid_losses": [
+      0.5138064654015783,
+      0.40051357034427015,
+      0.41264182498205954,
+      0.38793817874210984,
+      0.39558380361813217,
+      0.3743685249072402,
+      0.4528879327560539,
+      0.35007501609289826,
+      0.3583250829532965,
+      0.3960848058337596,
+      0.3755902406884663,
+      0.34697440150958386,
+      0.33246162142326585,
+      0.417837524147176,
+      0.3602585749839669,
+      0.36299259902826,
+      0.35109021814901437,
+      0.3434274084532439
+    ],
+    "valid_accs": [
+      0.8,
+      0.8328358208955224,
+      0.8425373134328358,
+      0.8440298507462687,
+      0.844776119402985,
+      0.8395522388059702,
+      0.8149253731343283,
+      0.8552238805970149,
+      0.8552238805970149,
+      0.8380597014925373,
+      0.85,
+      0.8656716417910447,
+      0.8664179104477612,
+      0.8305970149253732,
+      0.858955223880597,
+      0.8611940298507462,
+      0.8656716417910447,
+      0.8701492537313433
+    ],
+    "early_stopping_patience": 5,
+    "early_stopping_min_delta": 0.0,
+    "stopped_early": true
+  },
+  "label_to_index": {
+    "1": {
+      "index": 0,
+      "name": "hand at rest"
+    },
+    "2": {
+      "index": 1,
+      "name": "hand clenched in a fist"
+    },
+    "3": {
+      "index": 2,
+      "name": "wrist flexion"
+    },
+    "4": {
+      "index": 3,
+      "name": "wrist extension"
+    },
+    "5": {
+      "index": 4,
+      "name": "radial deviations"
+    },
+    "6": {
+      "index": 5,
+      "name": "ulnar deviations"
+    },
+    "7": {
+      "index": 6,
+      "name": "extended palm"
+    }
+  },
+  "index_to_label": {
+    "0": 1,
+    "1": 2,
+    "2": 3,
+    "3": 4,
+    "4": 5,
+    "5": 6,
+    "6": 7
+  },
+  "split_sizes": {
+    "train": 11020,
+    "valid": 1340,
+    "test": 1462
+  },
+  "test_loss": 0.3299828699284148,
+  "test_acc": 0.8816689466484268,
+  "test_precision_weighted": 0.882855488859483,
+  "test_recall_weighted": 0.8816689466484268,
+  "test_f1_weighted": 0.8785911575699589,
+  "test_confusion_matrix": [
+    [
+      243,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      182,
+      36,
+      0,
+      0,
+      9,
+      0
+    ],
+    [
+      16,
+      3,
+      225,
+      0,
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      226,
+      16,
+      3,
+      0
+    ],
+    [
+      0,
+      5,
+      15,
+      16,
+      202,
+      1,
+      0
+    ],
+    [
+      2,
+      1,
+      25,
+      2,
+      0,
+      210,
+      3
+    ],
+    [
+      1,
+      0,
+      0,
+      11,
+      2,
+      2,
+      1
+    ]
+  ]
+}
